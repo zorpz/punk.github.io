@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="一键盘足矣">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zorpz的小木屋">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="寻寻觅觅">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建简介">
+<meta property="og:url" content="http://yoursite.com/blog/hexo搭建简介.html">
 <meta property="og:site_name" content="Zorpz的小木屋">
-<meta property="og:description" content="一键盘足矣">
+<meta property="og:description" content="寻寻觅觅">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-13T16:06:47.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zorpz的小木屋">
-<meta name="twitter:description" content="一键盘足矣">
+<meta name="twitter:title" content="hexo搭建简介">
+<meta name="twitter:description" content="寻寻觅觅">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/blog/hexo搭建简介.html"/>
 
 
 
 
 
-  <title>Zorpz的小木屋</title>
+  <title>hexo搭建简介 | Zorpz的小木屋</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,158 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/hexo相关配置.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="灵魂的栖息地">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zorpz的小木屋">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/hexo相关配置.html" itemprop="url">hexo相关配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-14T00:12:11+08:00">
-                2017-11-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>进入本地blog文件夹，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"hexo相关配置"</span></span><br></pre></td></tr></table></figure></p>
-<p>在blog的post下可以找到相应的md文件，notepad打开显示以下结构：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo相关配置</span><br><span class="line">date: 2017-11-14 00:12:11</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<h3 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a>导航栏配置</h3><p>在theme下的对应schema文件下的 _config.yml 可以看到以下片段<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  schedule: /schedule/ || calendar</span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable/Disable menu icons.</span></span><br></pre></td></tr></table></figure></p>
-<p>主要对应导航栏的属性，取消注释即可见其效果。</p>
-<h3 id="tag配置"><a href="#tag配置" class="headerlink" title="tag配置"></a>tag配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在post下找到相应文件，修改为以下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2017-11-13 22:28:10</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<h3 id="categories-配置"><a href="#categories-配置" class="headerlink" title="categories 配置"></a>categories 配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>在post下找到相应文件，修改为以下内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2017-11-13 22:31:07</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">comments: <span class="literal">true</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<h3 id="文章添加tags和categories"><a href="#文章添加tags和categories" class="headerlink" title="文章添加tags和categories"></a>文章添加tags和categories</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo搭建简介</span><br><span class="line">date: 2017-11-13 22:13:02</span><br><span class="line">categories:</span><br><span class="line">- hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -428,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/hexo搭建简介.html" itemprop="url">hexo搭建简介</a></h1>
+          <h1 class="post-title" itemprop="name headline">hexo搭建简介</h1>
         
 
         <div class="post-meta">
@@ -488,6 +338,10 @@
           
 
           
+              <div class="post-description">
+                  寻寻觅觅
+              </div>
+          
 
         </div>
       </header>
@@ -502,16 +356,28 @@
       
 
       
-        
-          寻寻觅觅
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/hexo搭建简介.html">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h3><p>用来提交文章到github上，到官网<a href="https://git-scm.com/download/win" target="_blank" rel="external">https://git-scm.com/download/win</a> 下载相应的版本，具体安装此处省略。</p>
+<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>用来生成页面，到官网<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a> 下载相应的版本，具体安装此处省略。</p>
+<h3 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h3><p>配置远程博客仓库。</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><h3 id="预工作"><a href="#预工作" class="headerlink" title="预工作"></a>预工作</h3><p>1、创建本地文件夹，作为blog的地址。<br>2、修改镜像</p>
+<p>默认的镜像地址下载速度特别慢，让人怀疑人生，最后才想到是镜像的问题。</p>
+<p>修改镜像的三种方法：</p>
+<p> (1)通过config命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">$ npm info underscore</span><br></pre></td></tr></table></figure></p>
+<p>配置正确的话，会收到相应的json信息。</p>
+<p> (2)命令行指定<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm --registry https://registry.npm.taobao.org info underscor</span><br></pre></td></tr></table></figure></p>
+<p> (3)编辑 ~/.npmrc 加入下面内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">registry = https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
+<p>附常见的NPM镜像：<a href="https://npm.taobao.org/" target="_blank" rel="external">https://npm.taobao.org/</a></p>
+<h3 id="正式工作"><a href="#正式工作" class="headerlink" title="正式工作"></a>正式工作</h3><p>1、安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure></p>
+<p>2、初始化hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>3、生成静态界面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate （或者hexo g）</span><br></pre></td></tr></table></figure></p>
+<p>4、启动本地服务，进行预览<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<p>浏览器 输入进行 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 预览</p>
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>1、repository name: your githubname.github.io<br>2、选择public，private私密收费<br>3、Initialize this repository with a README 勾上<br>4、在创建的本地blog文件夹下修改_config.yml</p>
+<p>在yml的末尾修改成以下样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     <span class="built_in">type</span>: git</span><br><span class="line">     repo: https://github.com/zorpz/zorpz.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure></p>
+<p>5、执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>6、提交到github上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hext g</span><br><span class="line">$ hext d</span><br></pre></td></tr></table></figure></p>
+<p>至此，github博客搭建完成。</p>
+
       
     </div>
     
@@ -526,14 +392,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/hexo相关配置.html" rel="prev" title="hexo相关配置">
+                hexo相关配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -543,10 +431,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -554,6 +443,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -574,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -637,6 +539,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载git"><span class="nav-number">1.1.</span> <span class="nav-text">下载git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装nodejs"><span class="nav-number">1.2.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册github账号"><span class="nav-number">1.3.</span> <span class="nav-text">注册github账号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#预工作"><span class="nav-number">2.1.</span> <span class="nav-text">预工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正式工作"><span class="nav-number">2.2.</span> <span class="nav-text">正式工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置github"><span class="nav-number">2.3.</span> <span class="nav-text">配置github</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -777,6 +695,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
