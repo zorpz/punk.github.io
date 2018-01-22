@@ -87,10 +87,20 @@
 <meta property="og:site_name" content="Zorpz">
 <meta property="og:description" content="世间万物，有因有果">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-16T15:03:19.677Z">
+<meta property="og:image" content="http://yoursite.com/images/UML/UML_class.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/interface1.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/interface2.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/inherit.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/implement.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/refer.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/group.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/composite.JPG">
+<meta property="og:image" content="http://yoursite.com/images/UML/depend.JPG">
+<meta property="og:updated_time" content="2018-01-22T15:51:02.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UML基本知识">
 <meta name="twitter:description" content="世间万物，有因有果">
+<meta name="twitter:image" content="http://yoursite.com/images/UML/UML_class.JPG">
 
 
 
@@ -367,12 +377,30 @@
       
 
       
-        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>UML类图解释：<br>第一层 实体名<br>第二层 属性名<br>第三层 方法名</p>
-<h2 id="UML的几种关系"><a href="#UML的几种关系" class="headerlink" title="UML的几种关系"></a>UML的几种关系</h2><h3 id="接口-虚线无箭头"><a href="#接口-虚线无箭头" class="headerlink" title="接口[虚线无箭头]"></a>接口[虚线无箭头]</h3><p>表示方法：<br>（1）和实体类似，顶层有interface表示<br>（2）棒棒糖表示：小圆圈旁有实现方法</p>
-<h3 id="继承关系-空心箭头-实线指向父类"><a href="#继承关系-空心箭头-实线指向父类" class="headerlink" title="继承关系[空心箭头+实线指向父类]"></a>继承关系[空心箭头+实线指向父类]</h3><h3 id="关联关系-实线箭头"><a href="#关联关系-实线箭头" class="headerlink" title="关联关系[实线箭头]"></a>关联关系[实线箭头]</h3><p>A类中包含B类的引用</p>
-<h3 id="聚合关系-空心菱形"><a href="#聚合关系-空心菱形" class="headerlink" title="聚合关系[空心菱形]"></a>聚合关系[空心菱形]</h3><p>聚合关系是一种弱的拥有关系。如大雁属于雁群的一部分，雁群的一部分不一定是大雁。</p>
-<h3 id="组合关系-实心菱形，菱形在拥有者上"><a href="#组合关系-实心菱形，菱形在拥有者上" class="headerlink" title="组合关系[实心菱形，菱形在拥有者上]"></a>组合关系[实心菱形，菱形在拥有者上]</h3><p>组合关系是一种强的用友关系。如翅膀是大雁身体的一部分，在程序中体现为引用的对象随类创建而创建。</p>
-<h3 id="依赖关系-虚线箭头表示"><a href="#依赖关系-虚线箭头表示" class="headerlink" title="依赖关系[虚线箭头表示]"></a>依赖关系[虚线箭头表示]</h3><p>如大雁需要空气和水，在程序中体现为构造函数的参数。</p>
+        <h2 id="类图总览"><a href="#类图总览" class="headerlink" title="类图总览"></a>类图总览</h2><p><img src="/images/UML/UML_class.JPG" alt=""></p>
+<h2 id="概念初析"><a href="#概念初析" class="headerlink" title="概念初析"></a>概念初析</h2><table>
+<thead>
+<tr>
+<th>动物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+体重</td>
+</tr>
+<tr>
+<td>+喝水</td>
+</tr>
+</tbody>
+</table>
+<p>UML类图解释：<br>第一层 实体名<br>第二层 属性名<br>第三层 方法名，符号对应（+对应public、-表示private，#表示protected）</p>
+<h2 id="UML的几种关系"><a href="#UML的几种关系" class="headerlink" title="UML的几种关系"></a>UML的几种关系</h2><h3 id="接口-虚线无箭头"><a href="#接口-虚线无箭头" class="headerlink" title="接口[虚线无箭头]"></a>接口[虚线无箭头]</h3><p>表示方法：<br>（1）矩形表示，顶层有interface表示<br><img src="/images/UML/interface1.JPG" alt=""><br>（2）棒棒糖表示：小圆圈旁有实现方法<br><img src="/images/UML/interface2.JPG" alt=""></p>
+<h3 id="继承关系-空心箭头-实线指向父类"><a href="#继承关系-空心箭头-实线指向父类" class="headerlink" title="继承关系[空心箭头+实线指向父类]"></a>继承关系[空心箭头+实线指向父类]</h3><p><img src="/images/UML/inherit.JPG" alt=""></p>
+<h3 id="实现关系-空心箭头-虚线指向接口"><a href="#实现关系-空心箭头-虚线指向接口" class="headerlink" title="实现关系[空心箭头+虚线指向接口]"></a>实现关系[空心箭头+虚线指向接口]</h3><p><img src="/images/UML/implement.JPG" alt=""></p>
+<h3 id="关联关系-实线箭头指向关联对象"><a href="#关联关系-实线箭头指向关联对象" class="headerlink" title="关联关系[实线箭头指向关联对象]"></a>关联关系[实线箭头指向关联对象]</h3><p>A类中包含B类的引用<br><img src="/images/UML/refer.JPG" alt=""></p>
+<h3 id="聚合关系-空心菱形"><a href="#聚合关系-空心菱形" class="headerlink" title="聚合关系[空心菱形]"></a>聚合关系[空心菱形]</h3><p>聚合关系是一种弱的拥有关系。如大雁属于雁群的一部分，雁群的一部分不一定是大雁。<br><img src="/images/UML/group.JPG" alt=""></p>
+<h3 id="组合关系-实心菱形，菱形在拥有者上，并且有数字对应"><a href="#组合关系-实心菱形，菱形在拥有者上，并且有数字对应" class="headerlink" title="组合关系[实心菱形，菱形在拥有者上，并且有数字对应]"></a>组合关系[实心菱形，菱形在拥有者上，并且有数字对应]</h3><p>组合关系是一种强的拥有关系。如翅膀是大雁身体的一部分，在程序中体现为引用的对象随类创建而创建。<br><img src="/images/UML/composite.JPG" alt=""></p>
+<h3 id="依赖关系-虚线箭头表示"><a href="#依赖关系-虚线箭头表示" class="headerlink" title="依赖关系[虚线箭头表示]"></a>依赖关系[虚线箭头表示]</h3><p>如大雁需要空气和水，在程序中体现为构造函数的参数。<br><img src="/images/UML/depend.JPG" alt=""></p>
 
       
     </div>
@@ -496,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -553,7 +581,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML的几种关系"><span class="nav-number">2.</span> <span class="nav-text">UML的几种关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#接口-虚线无箭头"><span class="nav-number">2.1.</span> <span class="nav-text">接口[虚线无箭头]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承关系-空心箭头-实线指向父类"><span class="nav-number">2.2.</span> <span class="nav-text">继承关系[空心箭头+实线指向父类]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联关系-实线箭头"><span class="nav-number">2.3.</span> <span class="nav-text">关联关系[实线箭头]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚合关系-空心菱形"><span class="nav-number">2.4.</span> <span class="nav-text">聚合关系[空心菱形]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合关系-实心菱形，菱形在拥有者上"><span class="nav-number">2.5.</span> <span class="nav-text">组合关系[实心菱形，菱形在拥有者上]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖关系-虚线箭头表示"><span class="nav-number">2.6.</span> <span class="nav-text">依赖关系[虚线箭头表示]</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#类图总览"><span class="nav-number">1.</span> <span class="nav-text">类图总览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概念初析"><span class="nav-number">2.</span> <span class="nav-text">概念初析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML的几种关系"><span class="nav-number">3.</span> <span class="nav-text">UML的几种关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#接口-虚线无箭头"><span class="nav-number">3.1.</span> <span class="nav-text">接口[虚线无箭头]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承关系-空心箭头-实线指向父类"><span class="nav-number">3.2.</span> <span class="nav-text">继承关系[空心箭头+实线指向父类]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现关系-空心箭头-虚线指向接口"><span class="nav-number">3.3.</span> <span class="nav-text">实现关系[空心箭头+虚线指向接口]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联关系-实线箭头指向关联对象"><span class="nav-number">3.4.</span> <span class="nav-text">关联关系[实线箭头指向关联对象]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚合关系-空心菱形"><span class="nav-number">3.5.</span> <span class="nav-text">聚合关系[空心菱形]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合关系-实心菱形，菱形在拥有者上，并且有数字对应"><span class="nav-number">3.6.</span> <span class="nav-text">组合关系[实心菱形，菱形在拥有者上，并且有数字对应]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖关系-虚线箭头表示"><span class="nav-number">3.7.</span> <span class="nav-text">依赖关系[虚线箭头表示]</span></a></li></ol></li></ol></div>
             
 
           </div>
